@@ -1,29 +1,24 @@
 <?php
-//echo "<h1>Moyenne normale : </h1>";
-  //$moyennes = array(10,15,20);
-  //$dividende = array_sum($moyennes);
-  //$diviseur = count($moyennes);
-  //$resultat = $dividende/$diviseur;
-  //echo "La moyenne de : $moyennes[0],$moyennes[1],$moyennes[2] est : $resultat<br>";
+echo "<h1>Moyenne normale : </h1>";
+  $moyennes = array(10,15,20);
+  $dividende = array_sum($moyennes);
+  $diviseur = count($moyennes);
+  $resultat = $dividende/$diviseur;
+  echo "La moyenne de : $moyennes[0],$moyennes[1],$moyennes[2] est : $resultat<br>";
 
-//echo "<h1>Moyenne coefficientée : </h1>";
-  //$coefficient = array(2,3,5);
-  //$moyennes_coef = array(10,15,20);
-  //$resultat = ($moyennes_coef[0]*$coefficient[0] + $moyennes_coef[1]*$coefficient[1] + $moyennes_coef[2]*$coefficient[2]) / array_sum($coefficient);
-  //echo "En détail :<br> Coefficient $coefficient[0] pour $moyennes_coef[0]<br> Coefficient $coefficient[1] pour $moyennes_coef[1]<br> Coefficient $coefficient[2] pour $moyennes_coef[2]<br>";
-  //echo "<br>Les coefficients choisis sont : $coefficient[0],$coefficient[1],$coefficient[2]<br>";
-  //echo "La moyenne coefficientée de $moyennes_coef[0],$moyennes_coef[1],$moyennes_coef[2] est : $resultat";
+echo "<h1>Moyenne coefficientée : </h1>";
+  $coefficient = array(2,3,5);
+  $moyennes_coef = array(10,11,2);
+  $resultat = ($moyennes_coef[0]*$coefficient[0] + $moyennes_coef[1]*$coefficient[1] + $moyennes_coef[2]*$coefficient[2]) / array_sum($coefficient);
+  echo "En détail :<br> Coefficient $coefficient[0] pour $moyennes_coef[0]<br> Coefficient $coefficient[1] pour $moyennes_coef[1]<br> Coefficient $coefficient[2] pour $moyennes_coef[2]<br>";
+  echo "<br>Les coefficients choisis sont : $coefficient[0],$coefficient[1],$coefficient[2]<br>";
+  echo "La moyenne coefficientée de $moyennes_coef[0],$moyennes_coef[1],$moyennes_coef[2] est : $resultat";
 
-  echo "<h1>Moyenne coefficientée : </h1>";
-    $coefficient = array(1,1,1);
-    $moyennes_coef = array(20,15,12);
-
-    for ($i=0; $i<3; $i++) {
-      $resultat = 0;
-      $calcul = $moyennes_coef[$i]*$coefficient[$i];
-      $resultat = $calcul;
-    }
-
-    echo $resultat_final = $resultat/array_sum($coefficient);
+  if($resultat>=10){
+    echo "<br>Bravo vous avez réussi à décrocher votre année";
+  }
+  else{
+    echo "<br>Désolé, vous n'avez pas réussi votre année...";
+  }
 
     ?>
