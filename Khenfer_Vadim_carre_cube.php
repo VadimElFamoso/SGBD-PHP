@@ -6,7 +6,7 @@
   </head>
   <body>
     <?php
-      $nombre = 5;
+      $nombre = $_POST['nombre'];
       $nombre_carre = $nombre**2;
       $nombre_cube = $nombre**3;
       echo "<p>Carré de $nombre : $nombre_carre</p>";
